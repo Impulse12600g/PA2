@@ -24,35 +24,16 @@ class Match:
         self._recorded_bool = False
 
     # Getters
-    def get_team_a(self) -> LineUp:
-        return self._line_up_a
-
-    def get_team_b(self) -> LineUp:
-        return self._line_up_b
-
-    def get_a_score(self) -> int:
-        return self._a_score
-
-    def get_b_score(self) -> int:
-        return self._b_score
-
-    def get_a_country(self) -> Country:
-        return self._line_up_a.get_team().get_country()
-
-    def get_b_country(self) -> Country:
-        return self._line_up_b.get_team().get_country()
-
-    def get_date_time(self) -> datetime:
-        return self._date
-
-    def get_referees(self) -> []:
-        return self._referees
-
-    def get_recorded_bool(self) -> bool:
-        return self._recorded_bool
-
-    def is_upcoming(self) -> bool:
-        return self._date > datetime.now()
+    def get_team_a(self) -> LineUp: return self._line_up_a
+    def get_team_b(self) -> LineUp: return self._line_up_b
+    def get_a_score(self) -> int: return self._a_score
+    def get_b_score(self) -> int: return self._b_score
+    def get_a_country(self) -> Country: return self._line_up_a.get_team().get_country()
+    def get_b_country(self) -> Country: return self._line_up_b.get_team().get_country()
+    def get_date_time(self) -> datetime: return self._date
+    def get_referees(self) -> []: return self._referees
+    def get_recorded_bool(self) -> bool: return self._recorded_bool
+    def is_upcoming(self) -> bool: return self._date > datetime.now()
 
     def add_player(self, _player: Player, _team: Team):
         # check for team a
