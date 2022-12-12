@@ -1,10 +1,9 @@
-
-
 class Country:
+    _name: ''
 
-    def __init__(self, countryName):
-        self.__countryName = countryName
+    def __init__(self, _name: ''):
+        self._name = _name
 
-    def __str__(self):
-        return self.__countryName
+    # Getter
+    def get_country(self): return self._name
 
